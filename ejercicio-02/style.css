@@ -61,6 +61,32 @@ body {
 /* Layout */
 
 /* Componentes */
+.contenedor-banner p{
+text-align: left;
+font-family: Inter;
+margin-left: 20px;
+margin-right: 60px;
+padding-right: 120px;
+}
+.contenedor-banner img{
+  width: 300px;
+  height: 200px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+.contenedor-banner h2{
+  font-size: 60px;
+  font-family: Brand;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.contenedor-banner{
+   background-image: url("https://res.cloudinary.com/dyk5cl3d8/image/upload/v1644342669/web%206to%20semestre/IMG_7623_uzpsrh.jpg");
+  padding-bottom: 30px;
+  padding-top: 5px;
+}
 
 /* Utilidades */
 .flex {
