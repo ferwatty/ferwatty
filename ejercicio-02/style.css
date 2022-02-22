@@ -20,6 +20,7 @@ picture {
 body {
   line-height: 1.5;
   min-height: 100vh;
+  color: rgb(0, 0, 0);
 }
 
 ul {
@@ -50,43 +51,63 @@ picture {
 
 /* Variables */
 :root {
-  --font-sans: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
-  /* --size-outline: 3px; // Esto es para cambiar el outline del helper */
+font-family: 'Inter', sans-serif;
 }
 
 /* Base */
 body {
   font-family: var(--font-sans);
+
+
 }
 /* Layout */
 
-/* Componentes */
 .contenedor-banner p{
+font-size: 18px;
 text-align: left;
-font-family: Inter;
 margin-left: 20px;
 margin-right: 60px;
-padding-right: 120px;
+padding-right: 60px;
 }
 .contenedor-banner img{
-  width: 300px;
-  height: 200px;
-  margin-top: 30px;
+  width: 20%;
+  object-fit: contain;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: 20px;
+  margin-bottom: 10px;
 }
-.contenedor-banner h2{
-  font-size: 60px;
-  font-family: Brand;
+.contenedor-banner h2,
+.contenedor-banner p:first-of-type
+{
+  font-size: 70px;
   text-align: left;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 20px;
 }
+.contenedor-banner p:first-of-type{
+ display: none;
+}
+.contenedor-banner:hover p:first-of-type{
+ display: block;
+}
+.contenedor-banner:hover h2{
+ display: none;
+}
+
 .contenedor-banner{
-   background-image: url("https://res.cloudinary.com/dyk5cl3d8/image/upload/v1644342669/web%206to%20semestre/IMG_7623_uzpsrh.jpg");
+   /* background-image: url("https://res.cloudinary.com/dyk5cl3d8/image/upload/v1644342669/web%206to%20semestre/IMG_7623_uzpsrh.jpg"); */
+  background-color: #ff9a00;
+   background-repeat: no-repeat;
+   background-position: top center;
+   max-height: 400px;
+  background-size: cover;
   padding-bottom: 30px;
   padding-top: 5px;
 }
+
+
+/* Componentes */
 
 /* Utilidades */
 .flex {
