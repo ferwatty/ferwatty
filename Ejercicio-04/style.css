@@ -1,0 +1,103 @@
+/* Imports & supports */
+/* @import url("https://rsms.me/inter/inter.css");
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+} */
+/* Reset & Base */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,600;1,100;1,300&family=Rubik+Beastly&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding-inline: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Variables */
+:root {
+  /* colores */
+  /*   --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%; */
+  /* tipografia */
+  --f-family: "Raleway", sans-serif;
+  --f-size: 1.5vw;
+
+  --f-family2: "Rubik Beastly", sans-serif;
+}
+/* Aplica estas variables a todos los elementos */
+* {
+  font-family: var(--f-family);
+  font-size: var(--f-size);
+}
+h1,
+h2,
+h3 {
+  --f-size: 25vw;
+  font-family: var(--f-family2);
+}
+/* Componentes */
+/* Utilidades */
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.contenedor {
+  display: block;
+  margin: auto;
+}
+.contenedor h2 {
+}
+.contenedor p {
+  margin-left: 15px;
+}
+
+.contenedor img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
