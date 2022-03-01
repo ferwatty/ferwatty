@@ -28,6 +28,8 @@ picture {
 body {
   line-height: 1.5;
   min-height: 100vh;
+  background-color: beige;
+
 }
 ul {
   margin: 0;
@@ -64,7 +66,7 @@ picture {
   --f-family: "Raleway", sans-serif;
   --f-size: 1.5vw;
 
-  --f-family2: "Rubik Beastly", sans-serif;
+  --f-family2: "Culture", sans-serif;
 }
 /* Aplica estas variables a todos los elementos */
 * {
@@ -74,30 +76,46 @@ picture {
 h1,
 h2,
 h3 {
-  --f-size: 25vw;
+  --f-size: 23vw;
   font-family: var(--f-family2);
 }
 /* Componentes */
 /* Utilidades */
-.flex {
-  display: flex;
+
+figure {
+  width: 90vw;
+  border: 3px solid black;
+  border-radius: 1rem;
+  overflow: hidden;
 }
+
 .grid {
   display: grid;
 }
-.contenedor {
-  display: block;
-  margin: auto;
-}
-.contenedor h2 {
-}
-.contenedor p {
-  margin-left: 15px;
+
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 10px;
 }
 
-.contenedor img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 50px;
+.caja {
+  position: relative;
+  width: 100%;
 }
+
+.contenedor {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+.contenedor p{
+margin-left: 2vh;
+
+}
+
